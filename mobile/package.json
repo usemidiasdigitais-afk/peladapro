@@ -1,0 +1,26 @@
+{
+  "name": "pelada-pro-mobile",
+  "version": "1.0.0",
+  "description": "App para gerenciamento de partidas de futebol amador",
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start",
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@types/react": "~19.1.10",
+    "expo": "^54.0.0",
+    "expo-router": "^6.0.0",
+    "expo-status-bar": "^3.0.0",
+    "react": "^19.0.0",
+    "react-native": "^0.81.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  },
+  "private": true
+}

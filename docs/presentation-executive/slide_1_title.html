@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelada Pró - Apresentação Executiva</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #F3F4F6 0%, #F9FAFB 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            font-family: 'DIN Next', 'Inter', sans-serif;
+        }
+
+        /* Grid background pattern */
+        .grid-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(0deg, transparent 24%, rgba(209, 213, 219, 0.3) 25%, rgba(209, 213, 219, 0.3) 26%, transparent 27%, transparent 74%, rgba(209, 213, 219, 0.3) 75%, rgba(209, 213, 219, 0.3) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(209, 213, 219, 0.3) 25%, rgba(209, 213, 219, 0.3) 26%, transparent 27%, transparent 74%, rgba(209, 213, 219, 0.3) 75%, rgba(209, 213, 219, 0.3) 76%, transparent 77%, transparent);
+            background-size: 60px 60px;
+            z-index: 1;
+        }
+
+        /* Content wrapper */
+        .content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding: 0 80px;
+            width: 100%;
+        }
+
+        /* Left section */
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .main-title {
+            font-size: 72px;
+            font-weight: 700;
+            color: #1F2937;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            font-family: 'DIN Next', sans-serif;
+        }
+
+        .accent-bar {
+            width: 80px;
+            height: 8px;
+            background: #F97316;
+            margin: 10px 0 20px 0;
+            border-radius: 2px;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            color: #6B7280;
+            font-weight: 400;
+            line-height: 1.4;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pillars {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .pillar {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .pillar-icon {
+            font-size: 32px;
+            color: #F97316;
+            width: 40px;
+        }
+
+        .pillar-text {
+            font-size: 16px;
+            color: #374151;
+            font-weight: 600;
+            font-family: 'DIN Next', sans-serif;
+        }
+
+        /* Right section - Visual elements */
+        .right-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 400px;
+        }
+
+        .visual-box {
+            width: 100%;
+            height: 100%;
+            background: rgba(249, 115, 22, 0.05);
+            border: 2px solid #D1D5DB;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #F97316;
+            font-family: 'DIN Next', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #6B7280;
+            margin-top: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .divider {
+            width: 60%;
+            height: 1px;
+            background: #D1D5DB;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="grid-background"></div>
+        
+        <div class="content">
+            <!-- Left Section -->
+            <div class="left-section">
+                <div>
+                    <div class="main-title">Pelada Pró</div>
+                    <div class="accent-bar"></div>
+                    <div class="subtitle">Transformando a Gestão de Esportes Amadores</div>
+                </div>
+
+                <div class="pillars">
+                    <div class="pillar">
+                        <div class="pillar-icon">⚡</div>
+                        <div class="pillar-text">Performance</div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">🔐</div>
+                        <div class="pillar-text">Segurança</div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">💡</div>
+                        <div class="pillar-text">Inovação</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="visual-box">
+                    <div class="stat-item">
+                        <div class="stat-number">370+</div>
+                        <div class="stat-label">Testes de Segurança</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">99.91%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">145ms</div>
+                        <div class="stat-label">Response Time (p95)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

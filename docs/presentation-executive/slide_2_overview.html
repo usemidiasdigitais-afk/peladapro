@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Geral em Números</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: linear-gradient(135deg, #F3F4F6 0%, #F9FAFB 100%);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            font-family: 'DIN Next', 'Inter', sans-serif;
+        }
+
+        /* Grid background */
+        .grid-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(0deg, transparent 24%, rgba(209, 213, 219, 0.2) 25%, rgba(209, 213, 219, 0.2) 26%, transparent 27%, transparent 74%, rgba(209, 213, 219, 0.2) 75%, rgba(209, 213, 219, 0.2) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(209, 213, 219, 0.2) 25%, rgba(209, 213, 219, 0.2) 26%, transparent 27%, transparent 74%, rgba(209, 213, 219, 0.2) 75%, rgba(209, 213, 219, 0.2) 76%, transparent 77%, transparent);
+            background-size: 60px 60px;
+            z-index: 1;
+        }
+
+        /* Content */
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 60px 80px; /* top padding must remain */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px; /* reduced from 40 to save vertical space */
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            color: #1F2937;
+            font-family: 'DIN Next', sans-serif;
+        }
+
+        .accent-bar {
+            width: 60px;
+            height: 6px;
+            background: #F97316;
+            border-radius: 2px;
+        }
+
+        /* Metrics Grid: reorganized to 4 columns so items stack into 2 rows */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px; /* reduced gap */
+            flex: 1;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid #D1D5DB;
+            padding: 18px; /* reduced from 30px */
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* reduced from 12px */
+            align-items: flex-start;
+        }
+
+        .metric-icon {
+            font-size: 32px;
+            color: #F97316;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .metric-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1F2937;
+            font-family: 'DIN Next', sans-serif;
+            line-height: 1;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            color: #6B7280;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .metric-status {
+            font-size: 12px;
+            color: #10B981;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="grid-background"></div>
+        
+        <div class="content">
+            <div class="header">
+                <div class="title">Visão Geral em Números</div>
+                <div class="accent-bar"></div>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">📝</div>
+                    <div class="metric-value">15,000+</div>
+                    <div class="metric-label">Linhas de Código</div>
+                    <div class="metric-status">✅ Completo</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">📁</div>
+                    <div class="metric-value">150+</div>
+                    <div class="metric-label">Arquivos</div>
+                    <div class="metric-status">✅ Organizado</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">✓</div>
+                    <div class="metric-value">370+</div>
+                    <div class="metric-label">Testes</div>
+                    <div class="metric-status">✅ Robusto</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">📊</div>
+                    <div class="metric-value">95%+</div>
+                    <div class="metric-label">Cobertura de Testes</div>
+                    <div class="metric-status">✅ Excelente</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">🔌</div>
+                    <div class="metric-value">30+</div>
+                    <div class="metric-label">Endpoints tRPC</div>
+                    <div class="metric-status">✅ Completo</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">⭐</div>
+                    <div class="metric-value">8</div>
+                    <div class="metric-label">Diferenciais Competitivos</div>
+                    <div class="metric-status">✅ Único</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">🔐</div>
+                    <div class="metric-value">0</div>
+                    <div class="metric-label">Vulnerabilidades Conhecidas</div>
+                    <div class="metric-status">✅ Seguro</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">🏆</div>
+                    <div class="metric-value">A+</div>
+                    <div class="metric-label">Security Grade</div>
+                    <div class="metric-status">✅ Enterprise</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
