@@ -1,0 +1,70 @@
+# Dependências
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Build e compilação
+dist/
+build/
+.next/
+out/
+.expo/
+.eas/
+
+# Variáveis de ambiente (NUNCA subir dados reais)
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache
+.cache/
+.turbo/
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+
+# Segurança - NUNCA subir esses arquivos
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+.env.production
+.env.staging
+credentials.json
+secrets.json
+
+# Arquivos de teste
+coverage/
+.nyc_output/
+
+# Arquivos do sistema
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Arquivos específicos do projeto
+.env.asaas
+.env.supabase
+.env.google
+firebase-key.json
+google-credentials.json

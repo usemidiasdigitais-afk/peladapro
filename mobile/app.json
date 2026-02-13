@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Pelada Pró",
+    "slug": "pelada-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "peladapro",
+    "userInterfaceStyle": "automatic",
+    "description": "App para gerenciamento de partidas de futebol amador com pagamento automático PIX",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.peladapro.mobile",
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.peladapro.mobile",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    }
+  }
+}
